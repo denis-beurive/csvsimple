@@ -1,5 +1,5 @@
 import unittest
-from csv import Csv #@UnresolvedImport
+from csvsimple import Csv #@UnresolvedImport
 
 # -----------------------------------------------------------------
 # Some function that will be used to test the selection by

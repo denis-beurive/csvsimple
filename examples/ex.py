@@ -1,4 +1,4 @@
-from csv import Csv
+from csvsimple import Csv
 
 # Define a formater that will be used to convert records into strings.
 
