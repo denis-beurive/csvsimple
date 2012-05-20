@@ -13,6 +13,11 @@ Requirement
 
 This module requires Python 3 or greater.
 
+Documentation
+=============
+
+http://packages.python.org/csvsimple/index.html
+
 See this module on pypi.python.org
 ==================================
 
