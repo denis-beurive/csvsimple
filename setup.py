@@ -10,7 +10,7 @@ setup(
     py_modules=['csvsimple'],
     scripts=[],
     url='http://pypi.python.org/pypi?name=csvsimple',
-    license=open('LICENCE.txt').read(),
+    license=open('LICENSE.txt').read(),
     description='Very simple CSV utility for Python 3.',
     long_description=open('README.txt').read(),
     download_url='https://github.com/denis-beurive/csvsimple/zipball/master',
