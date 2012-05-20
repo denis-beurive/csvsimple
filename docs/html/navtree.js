@@ -2,7 +2,7 @@ var NAVTREE =
 [
   [ "CSV", "index.html", [
     [ "Class List", "annotated.html", [
-      [ "csv::Csv", "classcsv_1_1_csv.html", null ]
+      [ "csvsimple::Csv", "classcsvsimple_1_1_csv.html", null ]
     ] ],
     [ "Class Index", "classes.html", null ],
     [ "Class Members", "functions.html", null ],
@@ -10,7 +10,7 @@ var NAVTREE =
       [ "base", "namespacebase.html", null ]
     ] ],
     [ "File List", "files.html", [
-      [ "csv.py", null, null ]
+      [ "csvsimple.py", null, null ]
     ] ]
   ] ]
 ];

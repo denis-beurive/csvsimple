@@ -91,6 +91,10 @@ record = csv[1]
 print ("This is the first record:")
 print (myFormater(record, header))
 
+# Get a record's value by name.
+
+print ("Value 'id' of the second record is %d." % csv.getValue(csv[1], 'id'))
+
 # Get all the columns' names.
 
 print ("CSV's columns:")

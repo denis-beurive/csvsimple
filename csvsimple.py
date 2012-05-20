@@ -48,6 +48,8 @@ __all__ = ['Csv']
 #     for value in csv.values(): v.append(value)
 #  </code>
 #  </pre>
+#
+#  @remark See example on https://github.com/denis-beurive/csvsimple/tree/master/examples
 
 class Csv:
 	
@@ -59,6 +61,7 @@ class Csv:
 	#  @param in_record Record to convert into string.
 	#  @param in_header List of columns' names that defines the CSV's structure.
 	#  @return The method returns a string that represents the given record.
+	#  @remark See example on https://github.com/denis-beurive/csvsimple/tree/master/examples
 	@staticmethod
 	def __formater(in_record, in_header):
 		r = []
@@ -72,6 +75,7 @@ class Csv:
 	
 	## Return the default records' formater.
 	#  @return The method returns the default records' formater.
+	#  @remark See example on https://github.com/denis-beurive/csvsimple/tree/master/examples
 	@staticmethod
 	def getDefaultFormat():
 		return Csv.__formater;
@@ -93,6 +97,7 @@ class Csv:
 
 	## Create a CSV container.
 	#  @param in_header This list contains the names of the columns that define the CSV structure.
+	#  @remark See example on https://github.com/denis-beurive/csvsimple/tree/master/examples
 	def __init__(self, in_header):
 		# Check for duplicated columns' names.
 		c = collections.Counter(in_header)
@@ -119,12 +124,14 @@ class Csv:
 
 	## Add a record to the CSV container.
 	#  @param in_record This list contains the values to add.
+	#  @remark See example on https://github.com/denis-beurive/csvsimple/tree/master/examples
 	def add(self, in_record):
 		# Make sure that the number of values is correct.
 		if not len(in_record) == self.__count: raise RuntimeError('Invalid number of values for record (found %d, expected %d)' % (len(in_record), self.__count))
 		self.__records.append(in_record)
 
 	## Clear the CVS container.	
+	#  @remark See example on https://github.com/denis-beurive/csvsimple/tree/master/examples
 	def void(self): self.__records = []
 
 
@@ -147,7 +154,8 @@ class Csv:
 	#                 Dictionary's values must be functions.
 	#                 Function's signature is: def myFuntion(in_value)</li>
 	#         </ul>
-	# @return The method returns a lust of records.
+	#  @return The method returns a lust of records.
+	#  @remark See example on https://github.com/denis-beurive/csvsimple/tree/master/examples
 	def select(self, in_criterias=None, in_action=1):
 		if in_criterias is None: return self.__records;
 		res = []
@@ -183,16 +191,19 @@ class Csv:
 	## Set a function used to print records.
 	#  @param in_formatter Function with the following signature: def myFunction(in_record, in_header)
 	#         This function must return a string.
+	#  @remark See example on https://github.com/denis-beurive/csvsimple/tree/master/examples
 	def setFormater(self, in_formatter):
 		self.__format = in_formatter
 	
 	## Return the function used to print records.
-	#  @return Te method returns the function used to print records.	
+	#  @return Te method returns the function used to print records.
+	#  @remark See example on https://github.com/denis-beurive/csvsimple/tree/master/examples	
 	def getFormater(self):
 		return self.__format
 
 	## This method returns a list of strings. Each string represents a record.
 	#  @return The method returns a list of strings. Each string represents a record.
+	#  @remark See example on https://github.com/denis-beurive/csvsimple/tree/master/examples
 	def strs(self):
 		result = []
 		for record in self.__records:
@@ -204,6 +215,7 @@ class Csv:
 	#  @param in_record The record.
 	#  @param in_column_name Name of the column.
 	#  @return The method returns the value for the given column.
+	#  @remark See example on https://github.com/denis-beurive/csvsimple/tree/master/examples
 	def getValue(self, in_record, in_column_name):
 		return in_record[self.__position(in_column_name)]
 		

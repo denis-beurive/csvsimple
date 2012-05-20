@@ -6,7 +6,7 @@ Description
 
 See example on Github : 
 
-https://github.com/denis-beurive/pyCSV/blob/master/examples/ex.py
+https://github.com/denis-beurive/csvsimple/blob/master/examples/ex.py
 
 Requirement
 ===========
@@ -21,7 +21,7 @@ http://pypi.python.org/pypi?:action=display&name=csvsimple
 Installation from source
 ========================
 
-Get the source on Github: https://github.com/denis-beurive/pyCSV
+Get the source on Github: https://github.com/denis-beurive/csvsimple
 
     python setup.py sdist
 
