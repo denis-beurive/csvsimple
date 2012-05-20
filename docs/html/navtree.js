@@ -1,6 +1,6 @@
 var NAVTREE =
 [
-  [ "CSV", "index.html", [
+  [ "csvsimple", "index.html", [
     [ "Class List", "annotated.html", [
       [ "csvsimple::Csv", "classcsvsimple_1_1_csv.html", null ]
     ] ],
