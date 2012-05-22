@@ -142,7 +142,7 @@ class Csv:
 	#             <li>Dictionary's value: this value can be : a simple value, a regular expression or a functioin.
 	#                 The type of value depends on the value of parameter "in_action".</li>
 	#         </ul>
-	#         If this parameter is not specified, then the method returns all re records in the container.
+	#         If this parameter is not specified, then the method returns all the records in the container.
 	#  @param in_action This parameter defines the selection's method. 
 	#         Three methods are available :
 	#         <ul>
