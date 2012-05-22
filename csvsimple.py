@@ -77,7 +77,7 @@ class Csv:
 	#  @return The method returns the default records' formater.
 	#  @remark See example on https://github.com/denis-beurive/csvsimple/tree/master/examples
 	@staticmethod
-	def getDefaultFormat():
+	def getDefaultFormater():
 		return Csv.__formater;
 	
 	# -----------------------------------------------------------------
@@ -139,7 +139,7 @@ class Csv:
 	#  @param in_criterias This dictionary contains selections' criterions.
 	#         <ul>
 	#             <li>Dictionary's key : the name of a column.</li>
-	#             <li>Dictionary's value: this value can be : a simple value, a regular expression or a functio
+	#             <li>Dictionary's value: this value can be : a simple value, a regular expression or a functioin.
 	#                 The type of value depends on the value of parameter "in_action".</li>
 	#         </ul>
 	#         If this parameter is not specified, then the method returns all re records in the container.
