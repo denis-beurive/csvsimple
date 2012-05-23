@@ -110,7 +110,7 @@ class Csv:
 		self.__count     = len(in_header)               # Number of columns.
 		self.__records   = []                           # List of list.
 		self.__index     = 0                            # Used for the iterator.
-		self.__format    = Csv.getDefaultFormat()	    # Default values for string conversion.
+		self.__format    = Csv.getDefaultFormater()	    # Default values for string conversion.
 
 		# Build the association between columns' names and values' positions.
 		pos = 0		
