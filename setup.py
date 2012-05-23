@@ -4,7 +4,7 @@ from distutils.core import setup
 
 setup(
     name='csvsimple',
-    version='0.1.0',
+    version='0.1.1',
     author='Denis BEURIVE (http://beurive.com/)',
     author_email='denis.beurive@gmail.com',
     py_modules=['csvsimple'],
