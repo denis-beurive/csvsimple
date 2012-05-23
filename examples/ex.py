@@ -1,4 +1,5 @@
 from csvsimple import Csv
+import os
 
 # Define a formater that will be used to convert records into strings.
 
@@ -9,7 +10,7 @@ def myFormater(in_record, in_header):
 		value = in_record[i]
 		s     = "%s ===> %s" % (name.rjust(25), value)
 		r.append(s)
-	return "\n".join(r)
+	return os.linesep.join(r)
 
 # Define matchers that will be used to select records.
 
@@ -112,6 +113,21 @@ for name, value in csv.items():
 print ("Values per columns (columns's names are omited):")	
 for value in csv.values():
 	print ("    - %s" % value)
+	
+# Print using iterators.
+
+result   = []
+records  = csv.strs() # Return a list of strings...
+result.append("Dumping CSV:")
+li = iter(records) # iterates over the list of strings.
+while True:
+	try:
+		record = next(li)
+		result.append(record)
+	except StopIteration:
+		result.append("That's the end!")
+		break
+print (os.linesep.join(result))
 	
 # Remove a record.
 
